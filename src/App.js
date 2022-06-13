@@ -1,3 +1,4 @@
+import Albums from './Albums';
 import Artists from './Artists';
 import Counter from './Counter';
 
@@ -6,6 +7,7 @@ function App() {
         <>
             <Counter />
             <Artists />
+            <Albums />
         </>
     );
 }
