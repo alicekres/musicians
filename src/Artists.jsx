@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Artists.module.css';
 
 const Artists = () => {
     const artists = [
@@ -26,9 +27,15 @@ const Artists = () => {
         artists.map((artist) => {
             return (
                 <>
-                    <div>Artist: {artist.name}</div>
-                    <div>Music type: {artist.musicType}</div>
-                    <div>Background: {artist.background}</div>
+                    <div className={styles.artistCard}>
+                        <div className="artist">Artist: {artist.name}</div>
+                        <div className="music-type">
+                            Music type: {artist.musicType}
+                        </div>
+                        <div className="background">
+                            Background: {artist.background}
+                        </div>
+                    </div>
                 </>
             );
         })
