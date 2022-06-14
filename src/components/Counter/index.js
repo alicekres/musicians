@@ -18,13 +18,13 @@ const Counter = () => {
         <div>
             <div role="figure">Count: {counter}</div>
             <button className="button button-success" onClick={addBtnClick}>
-                add one
+                Like
             </button>
             <button
                 className="button button-success"
                 onClick={() => removeBtnClick()}
             >
-                remove one
+                Dislike
             </button>
         </div>
     );

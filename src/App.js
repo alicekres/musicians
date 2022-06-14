@@ -1,14 +1,14 @@
-import Albums from './Albums';
-import Artists from './Artists';
-import Counter from './Counter';
+import Albums from './components/Album';
+import Artists from './components/Artist';
+import Greeting from './components/Greeting';
 
 function App() {
     return (
-        <>
-            <Counter />
+        <main>
+            <Greeting />
             <Artists />
             <Albums />
-        </>
+        </main>
     );
 }
 
