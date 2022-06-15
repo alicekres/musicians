@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Surprise = () => {
+const SongLyrics = () => {
     const [artist, setArtist] = useState('');
     const [title, setTitle] = useState('');
     const [songLyrics, setSongLyrics] = useState('');
@@ -54,4 +54,4 @@ const Surprise = () => {
     );
 };
 
-export default Surprise;
+export default SongLyrics;

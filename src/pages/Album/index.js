@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import styles from './index.module.css';
-import Counter from '../Counter/';
+import Counter from '../../components/Counter';
 
-const Albums = () => {
+const Album = () => {
     const sandraAlbums = [
         { album: 'If I Stand', releaseDate: 2004, id: 1 },
         { album: 'Treasure', releaseDate: 2007, id: 2 },
@@ -86,4 +86,4 @@ const Albums = () => {
     );
 };
 
-export default Albums;
+export default Album;
