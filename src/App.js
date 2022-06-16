@@ -13,7 +13,15 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/songlyrics" element={<SongLyrics />} />
+                <Route
+                    path="/songlyrics"
+                    element={
+                        <SongLyrics
+                            initialArtist="Coldplay"
+                            initialTitle="Adventure of a Lifetime"
+                        />
+                    }
+                />
                 <Route path="/albums" element={<Album />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NoPage />} />
