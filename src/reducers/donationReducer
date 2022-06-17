@@ -1,0 +1,39 @@
+const initState = {
+    sum: 0,
+    loading: false,
+};
+
+const donationReducer = (state = initState, action) => {
+    switch (action.type) {
+        case 'SMALL-DONATION':
+            return {
+                ...state,
+                sum: state.sum + action.payload,
+                loading: false,
+            };
+
+        case 'MIDDLE-DONATION':
+            return {
+                ...state,
+                sum: state.sum + action.payload,
+                loading: false,
+            };
+
+        case 'BIG-DONATION':
+            return {
+                ...state,
+                sum: state.sum + action.payload,
+                loading: false,
+            };
+
+        case 'LOADING':
+            return {
+                ...state,
+                loading: true,
+            };
+        default:
+            return state;
+    }
+};
+
+export default donationReducer;

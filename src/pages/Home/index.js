@@ -1,11 +1,11 @@
 import React from 'react';
-import { Artist, Greeting } from '../../components';
+import { Artist, Greeting, Donation } from '../../components';
 
 const Home = () => {
     return (
         <>
             <Greeting />
-            <Artist />
+            <Artist component={<Donation />} />
         </>
     );
 };
