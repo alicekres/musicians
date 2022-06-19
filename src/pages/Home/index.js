@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Donation from '../../components/Donation';
 import {
     Artist,
     Greeting,
@@ -11,6 +13,7 @@ const Home = () => {
     return (
         <>
             <Greeting />
+            <Donation />
             <Artist
                 sandraComponent={<SandraDonation />}
                 helleviComponent={<HelleviDonation />}
