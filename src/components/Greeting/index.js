@@ -20,8 +20,9 @@ const Greeting = () => {
         <>
             <div className={styles.greetingCard}>
                 <h3 aria-label="greeting">
-                    Welcome {name}! Enjoy the music from the wonderful, talented
-                    musicians!
+                    {name
+                        ? `Welcome ${name}! Enjoy the music from the wonderful, talented musicians!`
+                        : 'Welcome! Enjoy the music from the wonderful, talented musicians!'}
                 </h3>
 
                 <form onSubmit={handleFormSubmit}>

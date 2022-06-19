@@ -3,13 +3,23 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 
 import './index.css';
 import App from './App';
-import donationReducer from './reducers/donationReducer';
+import sandraDonationReducer from './reducers/sandraDonationReducer';
+import helleviDonationReducer from './reducers/helleviDonationReducer';
+import daynaDonationReducer from './reducers/daynaDonationReducer';
 
-const store = createStore(donationReducer);
+const store = createStore(
+    combineReducers({
+        sandraDonationReducer,
+        helleviDonationReducer,
+        daynaDonationReducer,
+    })
+);
+console.log(store);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

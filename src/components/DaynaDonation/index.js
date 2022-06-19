@@ -1,33 +1,37 @@
 import React from 'react';
-
 import { useSelector, useDispatch } from 'react-redux';
-import * as donationActions from '../../actions/index';
 
 import styles from './index.module.css';
 
-const Donation = () => {
-    const sum = useSelector((state) => state.donationReducer.sum);
+const DaynaDonation = () => {
+    const sum = useSelector((state) => state.daynaDonationReducer.sum);
+
     const dispatch = useDispatch();
 
     const handleSmallDonation = () => {
-        dispatch({ type: 'SMALL-DONATION', payload: 5 });
+        dispatch({ type: 'SMALL-DAYNA-DONATION', payload: 5 });
     };
 
     const handleMiddleDonation = () => {
-        dispatch({ type: 'MIDDLE-DONATION', payload: 10 });
+        dispatch({ type: 'MIDDLE-DAYNA-DONATION', payload: 10 });
     };
 
     const handleBigDonation = () => {
-        dispatch({ type: 'BIG-DONATION', payload: 100 });
+        dispatch({ type: 'BIG-DAYNA-DONATION', payload: 100 });
     };
 
     return (
         <>
             <div className={styles.donationSection}>
                 <p className={styles.p}>
-                    Donation for your favourite musician: {sum}
+                    Yuo have the opportunity to support your favourite musician
+                    who are at the moment singing out of joy and working in
+                    other areas rather than in music industry.
                 </p>
-                <h2>Donations that have been made up to this point: {sum}</h2>
+                <p>
+                    Donations that have been made to Dayna up to this point:{' '}
+                    {sum}
+                </p>
                 <form>
                     <label htmlFor="small-donation"></label>
                     <input
@@ -56,4 +60,4 @@ const Donation = () => {
     );
 };
 
-export default Donation;
+export default DaynaDonation;

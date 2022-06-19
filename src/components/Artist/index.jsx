@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.css';
 
-const Artists = ({ component }) => {
+const Artists = ({ sandraComponent, helleviComponent, daynaComponent }) => {
     const artists = [
         {
             name: 'Sandra Entermann',
@@ -37,7 +37,9 @@ const Artists = ({ component }) => {
                     <div className="background">
                         Background: {artist.background}
                     </div>
-                    {component}
+                    {artist.name === 'Sandra Entermann' ? sandraComponent : ''}
+                    {artist.name === 'Dayna Petrie' ? daynaComponent : ''}
+                    {artist.name === 'Hellevi Nõmmik' ? helleviComponent : ''}
                 </div>
             );
         })

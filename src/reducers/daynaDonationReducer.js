@@ -3,23 +3,23 @@ const initState = {
     loading: false,
 };
 
-const donationReducer = (state = initState, action) => {
+const daynaDonationReducer = (state = initState, action) => {
     switch (action.type) {
-        case 'SMALL-DONATION':
+        case 'SMALL-DAYNA-DONATION':
             return {
                 ...state,
                 sum: state.sum + action.payload,
                 loading: false,
             };
 
-        case 'MIDDLE-DONATION':
+        case 'MIDDLE-DAYNA-DONATION':
             return {
                 ...state,
                 sum: state.sum + action.payload,
                 loading: false,
             };
 
-        case 'BIG-DONATION':
+        case 'BIG-DAYNA-DONATION':
             return {
                 ...state,
                 sum: state.sum + action.payload,
@@ -36,4 +36,4 @@ const donationReducer = (state = initState, action) => {
     }
 };
 
-export default donationReducer;
+export default daynaDonationReducer;
