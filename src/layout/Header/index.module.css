@@ -6,4 +6,19 @@
 .ul {
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
+}
+
+li a:hover {
+    color: #1d1c1c;
+}
+
+.navlink:hover {
+    color: #1d1c1c !important;
+}
+
+.notActiveStyle {
+    text-decoration: 'none';
+    color: 'white';
+    list-style-type: none;
 }

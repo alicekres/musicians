@@ -54,21 +54,31 @@ const SongLyrics = ({ initialTitle, initialArtist }) => {
                 </div>
                 <div className={styles.container}>
                     <form onSubmit={onFormSubmit} className={styles.form}>
-                        <label htmlFor="artist">Artist</label>
+                        <div className={styles.inputs}>
+                            <div className={styles.input}>
+                                <label htmlFor="artist">Artist</label>
+                                <input
+                                    type="text"
+                                    id="artist"
+                                    value={artist}
+                                    onChange={onArtistChange}
+                                />
+                            </div>
+                            <div className={styles.input}>
+                                <label htmlFor="title">Title</label>
+                                <input
+                                    type="text"
+                                    id="title"
+                                    value={title}
+                                    onChange={onTitleChange}
+                                />
+                            </div>
+                        </div>
                         <input
-                            type="text"
-                            id="artist"
-                            value={artist}
-                            onChange={onArtistChange}
+                            type="submit"
+                            value="Submit"
+                            className={styles.submit}
                         />
-                        <label htmlFor="title">Title</label>
-                        <input
-                            type="text"
-                            id="title"
-                            value={title}
-                            onChange={onTitleChange}
-                        />
-                        <input type="submit" value="Submit" />
                     </form>
                 </div>
                 <div className={styles.songSection}>

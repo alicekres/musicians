@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import styles from './index.module.css';
 import Counter from '../../components/Counter';

@@ -6,7 +6,7 @@ import styles from './index.module.css';
 const Header = () => {
     let activeStyle = {
         textDecoration: 'none',
-        color: 'grey',
+        color: '#1d1c1c',
         fontWeight: 'bold',
     };
 
@@ -21,41 +21,45 @@ const Header = () => {
                 <li>
                     <NavLink
                         to="/"
+                        className={styles.navlink}
                         style={({ isActive }) =>
                             isActive ? activeStyle : notactiveStyle
                         }
                     >
-                        Home
+                        HOME
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                         to="/songlyrics"
+                        className={styles.navlink}
                         style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
+                            isActive ? activeStyle : notactiveStyle
                         }
                     >
-                        Find Lyrics
+                        FIND LYRICS
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                         to="/albums"
+                        className={styles.navlink}
                         style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
+                            isActive ? activeStyle : notactiveStyle
                         }
                     >
-                        Albums
+                        ALBUMS
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                         to="/contact"
+                        className={styles.navlink}
                         style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
+                            isActive ? activeStyle : notactiveStyle
                         }
                     >
-                        Contact
+                        CONTACT
                     </NavLink>
                 </li>
             </ul>

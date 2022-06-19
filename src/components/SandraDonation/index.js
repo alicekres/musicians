@@ -30,7 +30,7 @@ const SandraDonation = () => {
                     other areas rather than in music industry.
                 </p>
                 <p>
-                    Donations that have been made to Sandra up to this point:{' '}
+                    Donations that have been made to Sandra up to this point: £
                     {sum}
                 </p>
                 <form>

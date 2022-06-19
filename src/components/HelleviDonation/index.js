@@ -29,7 +29,7 @@ const HelleviDonation = () => {
                     other areas rather than in music industry.
                 </p>
                 <p>
-                    Donations that have been made to Hellevi up to this point:{' '}
+                    Donations that have been made to Hellevi up to this point: £
                     {sum}
                 </p>
                 <form>
