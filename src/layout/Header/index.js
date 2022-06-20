@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { BackButton } from '../../components';
 
 import styles from './index.module.css';
 
@@ -62,6 +63,7 @@ const Header = () => {
                         CONTACT
                     </NavLink>
                 </li>
+                <BackButton />
             </ul>
         </nav>
     );

@@ -9,14 +9,18 @@ const Contact = () => {
                 <div className={styles.general}>
                     <h3>Contact me</h3>
                     <div className="firstGroup">
-                        <label htmlFor="name"></label>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Your name"
-                        />
-                        <label htmlFor="email"></label>
-                        <input type="email" name="email" placeholder="email" />
+                        <div className={styles.input}>
+                            <label htmlFor="name"></label>
+                            <input type="text" name="name" placeholder="name" />
+                        </div>
+                        <div className={styles.input}>
+                            <label htmlFor="email"></label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="email"
+                            />
+                        </div>
                     </div>
                     <div className="secondGroup">
                         <label htmlFor="message">Your message</label>

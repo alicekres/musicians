@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import Counter from '.';
+import Counter from './index';
 
 describe('Counter', () => {
     beforeEach(() => render(<Counter />));

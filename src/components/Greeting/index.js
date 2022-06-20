@@ -19,7 +19,7 @@ const Greeting = () => {
     return (
         <>
             <div className={styles.greetingCard}>
-                <h3 aria-label="greeting">
+                <h3 aria-label="greeting" role="greeting">
                     {name
                         ? `Welcome ${name}! Enjoy the music from the wonderful, talented musicians!`
                         : 'Welcome! Enjoy the music from the wonderful, talented musicians!'}
@@ -29,6 +29,7 @@ const Greeting = () => {
                     <label htmlFor="name"></label>
                     <input
                         type="text"
+                        role="input"
                         placeholder="Please enter your name"
                         id="name"
                         value={nameInput}

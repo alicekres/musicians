@@ -29,8 +29,14 @@ const Artists = ({ sandraComponent, helleviComponent, daynaComponent }) => {
         artists &&
         artists.map((artist) => {
             return (
-                <div key={artist.id} className={styles.artistCard}>
-                    <div className="artist">Artist: {artist.name}</div>
+                <div
+                    key={artist.id}
+                    className={styles.artistCard}
+                    role="artistcard"
+                >
+                    <div className="artist" role="artistname">
+                        Artist: {artist.name}
+                    </div>
                     <div className="music-type">
                         Music type: {artist.musicType}
                     </div>
